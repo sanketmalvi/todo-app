@@ -5,7 +5,7 @@ const API_URL = 'https://jsonplaceholder.typicode.com/todos';
 
 export const fetchTasks = createAsyncThunk('tasks/fetchTasks', async () => {
   const response = await axios.get(API_URL);
-  return response.data.slice(0, 10); // Limit to 10 tasks for simplicity
+  return response.data.slice(0, 15); // Limit to 15 tasks for simplicity
 });
 
 export const addTask = createAsyncThunk('tasks/addTask', async (task) => {
@@ -14,7 +14,7 @@ export const addTask = createAsyncThunk('tasks/addTask', async (task) => {
 });
 
 export const updateTask = createAsyncThunk('tasks/updateTask', async ({ id, completed }) => {
-  await axios.patch(`${API_URL}/${id}`, { completed }); // Removed the 'response' assignment
+  await axios.patch(`${API_URL}/${id}`, { completed }); 
   return { id, completed };
 });
 
