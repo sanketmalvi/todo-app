@@ -4,11 +4,11 @@ This is a simple To-Do List application built using React, Redux, and TailwindCS
 
 ## Technologies Used
 
-*React: JavaScript library for building user interfaces.
-*Redux Toolkit: State management for React.
-*TailwindCSS: Utility-first CSS framework for styling.
-*Axios: For making HTTP requests to fetch tasks and update them.
-\*React Router: For navigation between pages.
+- React: JavaScript library for building user interfaces.
+- Redux Toolkit: State management for React.
+- TailwindCSS: Utility-first CSS framework for styling.
+- Axios: For making HTTP requests to fetch tasks and update them.
+- React Router: For navigation between pages.
 
 ## `Setup Instructions`
 
